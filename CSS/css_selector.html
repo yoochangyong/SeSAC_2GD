@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" 1>
+    <title>선택자1- 기본선택자</title>
+    <style>
+         /*클래스 선택자: 항상 우위를 점하고 있음, 위치랑 관계가 없음*/
+         .small{
+            background-color: pink;
+        }
+        .big{
+            background-color:orange;
+        }
+        /* 전체 선택자 **/
+        *{
+            color:#ddd;
+        }
+        /*태그 선택자*/
+        h3{
+            background-color: black;
+            color:white;
+            text-align: center;
+            letter-spacing: 10px;
+        }
+        li{
+            background-color: aqua;
+            color:black;
+        }
+        span{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        /*id 선택자: 클래스랑 id랑 적용하면 id가 우선적으로 적용됨, 위치랑 관계가 없음
+        - id > class > tag*/
+        #text{
+            background-color: skyblue;
+            color:black;
+        }       
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="small">쥐</li>
+        <li class="big">소</li>
+        <li class="big">사자</li>
+        <li class="small">토끼</li>
+    </ul>
+    <h3>태그 선택자</h3>
+    <span id="text">span tag</span>
+</body>
+</html>
