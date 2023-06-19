@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사각형 가운데 정렬</title>
+    <style>
+        /*div{
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+            text-align: center;
+            margin: calc(50% - 50px) auto;
+        }
+        */
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+        }
+
+        .border-width{
+            border-width: 50%;
+            border-color:black;
+        }
+
+        .border-style{
+            border-style: dashed;
+        }
+
+        .border-color{
+            border-color:black;
+        }
+
+        .border{
+            border-top-color: green;
+        }
+        
+        .square{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid gray;
+            cursor:pointer;
+        }
+
+        .rounded{
+            border-radius: 40px;
+            border-radius: 50%;
+            border-radius: 10px;
+            border-radius: 5px 40px;
+            border-radius: 5px 20px 40px;
+            border-radius: 5px 20px 30px 50px;
+        }
+
+        .box-sizing{
+            padding: 20px;
+            border: 15px solid red;
+            background-color: tomato;
+        }
+        
+        .content-box{
+            /*기본 값*/
+            box-sizing: content-box;
+        }
+        .border-box{
+            box-sizing: border-box;
+        }
+    
+        .d-none {
+    /* display: none; */
+        background-color: red;
+        }
+        .invisible {
+    /* visibility: hidden; */
+        background-color: orangered;
+        }
+        .opacity-0 {
+    /* opacity: 0; *//
+        background-color:tomato;
+        }
+
+        .blue{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        .blue:hover{
+            opacity: 0%;
+        }
+
+    .square img[alt='푸']{
+        width: 200px;
+    }
+    
+    .overflow-hidden{
+        overflow: hidden;
+    }
+    .overflow-auto{
+        overflow:auto;
+    }
+    .overflow-scroll{
+        overflow:scroll;
+    }
+    .overflow-visible{
+        overflow:visible;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div>SeSAC</div>
+    <hr />
+    <div class="border-width">border-width</div>
+    <div class="border-style">border-style</div>
+    <div class="border-color">border-color</div>
+    <div class="border">border</div>     
+    <hr />
+
+    <h2>border-radius</h2>
+    <div class="square rounded"></div>
+    <hr />
+
+    <h2>box-sizing</h2>
+    <div class="square box-sizing content-box"></div>
+    <div class="square box-sizing border-box"></div>
+    <hr />
+
+    <h2>모습 숨기기</h2>
+    <div class="square">original</div>
+    <div class="square d-none">d-none</div>
+    <div class="square invisible">invisible</div>
+    <div class="square opacity-0">opacity-0</div>
+    <div class="square">original</div>
+    <hr />
+
+    <div class="blue">blue</div>
+    <hr />
+
+    <h2>overflow</h2>
+    <div class="square overflow-hidden"></div>
+    `<p>lorem</p>
+    <img src="/CSS/img/pooh.png">
+    <div class="square overflow-auto"></div>
+    <div class="square overflow-scroll"></div>
+    <div class="square overflow-visible"></div>
+
+    <h2>overflow</h2>
+    <div class="square overflow-hidden">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ullam soluta commodi saepe, suscipit rem! In, blanditiis, quas veritatis vitae ea itaque ab voluptatibus voluptatum, architecto nam saepe reiciendis sint?</p>
+        <img src="/CSS/img/pooh.png" alt="푸">
+    </div>
+    <div class="square overflow-auto"><p>
+ </div>
+    <div class="square overflow-scroll"><p>
+ </div>
+    <div class="square overflow-visible"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ullam soluta commodi saepe, suscipit rem! In, blanditiis, quas veritatis vitae ea itaque ab voluptatibus voluptatum, architecto nam saepe reiciendis sint?</p>
+        <img src="/CSS/img/pooh.png" alt="푸">
+ </div>
+</body>
+</html>

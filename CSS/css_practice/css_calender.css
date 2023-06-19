@@ -1,0 +1,70 @@
+*{
+    background-color: beige;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h1{
+    color:green;
+}
+
+table{
+    width: 100%;
+    
+}
+.holiday{
+    color:red;
+}
+
+tr > td:nth-child(7n+1){
+    color:red;
+}
+
+tr > td:nth-child(7n+7){
+    color:blue
+}
+
+td{text-align: center;}
+
+th{text-align: center;}
+
+/* 달력 실습 css
+
+body{
+    background-color: rgba(a는 투명도)(255,192,203,0.5);    
+}
+
+h1{
+    color: green;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+    height는 적용되지 않음 그래서 cellpadding으로 설정해줌
+}
+
+table tr th{
+    color: gray;
+}
+
+table tr th:first-child,
+table tr td:first-child,
+table tr td.holiday{
+    color: red;
+}
+
+table tr th:last-child,
+table tr td:last-child{
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+*/
