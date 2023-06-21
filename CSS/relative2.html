@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative/absolute/fixed</title>
+    <style>
+        .container{
+            width:500px;
+            height: 500px;
+            border:2px solid violet;
+        }
+
+        .container div{
+            border:2px solid red;
+            position:relative;
+            width: 100px;
+            height: 100px;
+        }    
+
+        .itemone{
+            left: 50px;
+            top: 30px;
+            background-color: yellow;
+            position:relative;
+
+        }
+        .itemtwo{
+            background-color: blue;
+            right: 30px;
+            bottom: 100px;
+            position:absolute;
+        }
+
+        .itemthree{
+            background-color:green;
+            position:fixed;
+            right: 100px;
+            top: 100px;
+        }        
+    </style>
+</head>
+<body>
+    <!--.container>.item$3-->
+    <div class="container">container
+        <div class="itemone">item1</div>
+        <div class="itemtwo">item2</div>
+        <div class="itemthree">item3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body {
+  height: 2000px;
+  width: 2000px;
+}
+
+/*
+.div1 {
+  background-image: url("/img/lion.jpg");
+  width: 500px;
+  height: 800px;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+.div2 {
+  background-image: url("/img/lion.jpg");
+  background-size: contain;
+  background-position: 100px 30px;
+  width: 500px;
+  height: 800px;
+}
+
+*/
+
+.div3 {
+  background-image: url("/img/lion.jpg");
+  width: 500px;
+  height: 800px;
+  background-size: cover;
+  background-position: 100px 500px;
+}

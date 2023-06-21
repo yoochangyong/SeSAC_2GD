@@ -1,0 +1,51 @@
+div {
+  border-radius: 50%;
+  position: absolute;
+}
+div {
+  width: 100px;
+  height: 100px;
+}
+.body1 {
+  background-color: red;
+  top: 100px;
+  left: 100px;
+}
+.body2 {
+  background-color: orange;
+  top: 160px;
+  left: 160px;
+}
+.body3 {
+  background-color: yellow;
+  left: 200px;
+  top: 190px;
+}
+.body4 {
+  background-color: green;
+  top: 240px;
+  left: 240px;
+}
+.body5 {
+  background-color: blue;
+  top: 300px;
+  left: 300px;
+}
+.eye-white {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  left: 10px;
+}
+.eye-black {
+  background-color: black;
+  width: 15px;
+  height: 15px;
+  left: 2px;
+  top: 3px;
+}
+img {
+  position: absolute;
+  top: 300px;
+}

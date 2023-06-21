@@ -1,0 +1,19 @@
+.ring {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(violet, red, yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pooh {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  background-image: url("/CSS/img/pooh.png");
+  background-size: cover;
+  border: 2px solid white;
+}
