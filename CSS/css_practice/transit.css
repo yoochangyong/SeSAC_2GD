@@ -1,0 +1,41 @@
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 2s;
+}
+
+body {
+  perspective: 500px;
+}
+
+.square1:hover {
+  width: 200px;
+  height: 100px;
+  transition-duration: 2s;
+  /*transform: translate(50px) scaleX(2);*/
+}
+
+.square2:hover {
+  transition-duration: 2s;
+  transform: translateX(50&, 0) skewX(-45deg);
+}
+
+.square3:hover {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  transition-duration: 2s;
+  transform: translateX(800px);
+  transition-delay: 2s;
+  /*transform: translateX(300px) rotate(360deg);*/
+}
+
+.square4:hover {
+  background-color: yellow;
+  transition-duration: 3s;
+  transform: translateY(50px) rotateY(360deg) scale(2);
+}
