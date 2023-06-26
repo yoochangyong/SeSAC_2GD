@@ -1,0 +1,16 @@
+.eng {
+  position: relative;
+  animation-name: eng;
+  animation-duration: 3s;
+}
+
+@keyframes eng {
+  0% {
+    width: 200%;
+    left: 100%;
+  }
+  100% {
+    width: 100%;
+    left: 0%;
+  }
+}

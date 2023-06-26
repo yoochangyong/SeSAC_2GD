@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 100px;
+  background-color: lightblue;
+  z-index: 100;
+  position: fixed;
+}
+/* 768px보다 클때의 header */
+header .inner {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* logo */
+}
+header .inner .fa-solid {
+  color: white;
+  font-size: 30px;
+}
+
+header .inner .menu {
+  display: flex;
+  color: white;
+}
+
+header .inner .menu li {
+  margin: 50px;
+  font-weight: 700;
+}
+
+/* 768px 이하일 때의 header */
+header .small-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 60px;
+  }
+
+  header .inner {
+    display: none;
+  }
+
+  header .small-menu {
+    display: block;
+    background-color: lightblue;
+    line-height: 100px;
+    text-align: center;
+  }
+
+  header .small-menu .fa-solid {
+    font-size: 60px;
+    color: white;
+  }
+  header .small-menu li {
+    background-color: azure;
+  }
+  header .small-menu li:hover {
+    background-color: lightblue;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* 미디어 쿼리 작성
+768px 이하일 때 */
+
+/* header.inner i{
+    left: 50%,
+    transform: translate(-50%)}
+    하면 중앙 정렬 됨 */

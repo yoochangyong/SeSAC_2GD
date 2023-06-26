@@ -25,16 +25,41 @@
         left: 0;
         right: 0;
       }
+      /* flex를 이용한 가운데 정렬 */
+      .parent2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .parent2 > .child {
+      }
+      /* position과 transform을 이용한 가운데 정렬 */
+      .parent3 {
+        position: relative;
+      }
+
+      .parent3 > .child {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
     </style>
   </head>
   <body>
     <h1>div 안에 div 가운데 정렬하기</h1>
     <h3>1. position과 margin:auto</h3>
-    <div class="parent1">
+    <div class="parent parent1">
       <div class="child"></div>
     </div>
 
     <h3>2. flex</h3>
+    <div class="parent parent2">
+      <div class="child"></div>
+    </div>
     <h3>3. position과 transform</h3>
+    <div class="parent parent3">
+      <div class="child"></div>
+    </div>
   </body>
 </html>
