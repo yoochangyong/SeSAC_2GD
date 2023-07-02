@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.util-menu {
+  min-width: 1200px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.util-menu .inner .topbar {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid blue;
+}
+
+.util-menu .inner .ul .li {
+  width: 16px;
+  height: 16px;
+  margin: 10px;
+}
+
+.main-menu .inner .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.photos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
