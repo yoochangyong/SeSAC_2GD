@@ -15,6 +15,9 @@ li {
   justify-content: flex-end;
 }
 
+.util-menu .inner {
+}
+
 .util-menu .inner .topbar {
   display: flex;
   flex-direction: row;
