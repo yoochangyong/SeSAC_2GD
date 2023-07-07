@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>요소선택하기</title>
+    <script defer src="/JS.DOM/요소선택.js"></script>
+    <!-- defer는 외부에서 링크 걸었을 때만, body랑 js 걸었는지 보려면
+    defer 걸거나 body 밑에다가 걸어야함 -->
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 100px;
+      }
+      .pink {
+        background-color: pink;
+      }
+      #green {
+        background-color: green;
+      }
+      #red {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pink">1</div>
+    <div class="pink">2</div>
+    <div class="pink">3</div>
+    <div class="pink">4</div>
+    <div id="green" class="others">green</div>
+    <div id="red" class="others">red</div>
+    <!-- name 속성 -->
+    <input type="text" name="id" />
+    <input type="button" name="id" />
+  </body>
+</html>
