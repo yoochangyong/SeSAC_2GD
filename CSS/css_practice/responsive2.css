@@ -52,7 +52,11 @@ header .small-menu {
     height: 60px;
   }
 
-  header .inner {
+  header .click {
+    display: block;
+  }
+
+  header .inner .menu {
     display: none;
   }
 
@@ -73,6 +77,9 @@ header .small-menu {
   header .small-menu li:hover {
     background-color: lightblue;
     color: white;
+    cursor: pointer;
+  }
+  .small-menu .side-bar {
     cursor: pointer;
   }
 }
