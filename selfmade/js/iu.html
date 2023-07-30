@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>시간의 바깥</title>
+   
+  </head>
+  <body>
+    <hr />
+    <div class="container">
+      <h2>시간의 바깥 - IU</h2>
+      <div>
+        서로를 <span>감</span>아 포개어진 <span>삶</span><br />
+        그들을 <span>가</span>만 내려보는 <span>달</span><br />
+        여전히 <span>많</span>아 하고 싶은 <span>말</span><br />
+        우리 좀 <span>봐</span> 꼭 하나 같<span>아</span><br />
+      </div>
+    </div>
+    
+    </div>
+  </body>
+  <script>
+    let textColor = document.querySelectorAll("span");
+    let textArea = document.querySelector(".container");
+    for(let span of textColor){
+       span.style.color="blue";
+       span.style.fontWeight="700";   
+    }
+    textArea.style.backgroundColor="#eee"
+    textArea.style.textAlign="center"
+    
+   </script>
+</html>
