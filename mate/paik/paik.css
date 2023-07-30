@@ -4,6 +4,7 @@
   box-sizing: border-box;
   position: relative;
   max-width: 1920px;
+  background-color: white;
 }
 
 header {
@@ -12,10 +13,12 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 3;
 }
 
 li {
   list-style: none;
+  display: inline-block;
 }
 
 li:hover {
@@ -25,6 +28,12 @@ li:hover {
 .util-menu {
   min-width: 1200px;
   text-align: right;
+}
+
+.util-menu .inner {
+  width: 100%;
+  height: 56px;
+  padding: 18px 0px 0px;
 }
 
 .util-menu .inner.logo {
@@ -37,6 +46,8 @@ li:hover {
   margin: 30px;
   font-size: 12px;
   justify-content: space-between;
+  display: inline-block;
+  z-index: 6;
 }
 
 .util-menu .inner .ul .li {
@@ -62,6 +73,7 @@ li:hover {
   width: 1150px;
   height: 65.91px;
   margin: -20px 0px 0px;
+  margin-top: 1px;
 }
 
 .photos {
@@ -69,5 +81,32 @@ li:hover {
   display: block;
   box-sizing: border-box;
   max-width: 100%;
-  padding-top: 123px;
+  padding-top: 246px;
+  height: 50vh;
+}
+
+.photos .wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photos .main0 {
+}
+
+.photos .main1 {
+}
+
+.photos .main2 {
+}
+
+.photos .main3 {
+}
+
+.photos .main4 {
+}
+
+.photos .main5 {
+}
+
+.photos .main6 {
 }

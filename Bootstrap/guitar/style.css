@@ -1,0 +1,12 @@
+/* @import url(/Bootstrap/guitar/gutiar.css);
+@import url(/Bootstrap/guitar/root.css);
+
+h1 {
+  margin: var(calc(--base-space * 2)) 0;
+  background-color: var(--main-green);
+  color: (--text-black-600);
+}
+
+h2 {
+  background-color: var(--main-blue);
+} */
