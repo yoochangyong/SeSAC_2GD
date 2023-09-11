@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>api test</title>
+    <script>
+      const serviceKey =
+        "wyV9inZShxC1nfFEVEWQCao9dPAK1aTTcTnz2MCHQqsEeFkpNglEWFgVqnIE+INQr85RFE0VwMR4kpduEc7M9A==";
+      const baseUrl =
+        "http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst?";
+
+      // add parameter
+      const params = new URLSearchParams({
+        serviceKey: serviceKey,
+        pageNo: 1,
+        numOfRows: 1000,
+        dataType: "JSON",
+        base_date: "20230827",
+        base_time: "0600",
+        nx: "90",
+        ny: "69",
+      });
+
+      fetch(baseUrl + params)
+        .then((response) => response.json())
+        .then((json) => {
+          json.response.body.items.item.map((entry) => {
+            console.log(entry);
+          });
+        });
+    </script>
+  </head>
+  <body>
+    <ul class="apis">
+      <li class="weather"></li>
+      <li class="temp"></li>
+    </ul>
+  </body>
+</html>
